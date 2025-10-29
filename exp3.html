@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Timetable</title>
+    <style>
+        table, th, td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 6px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+        .nested-table td {
+            border: 1px dotted #999;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>College Timetable</caption>
+        <tr>
+            <th rowspan="2">Day</th>
+            <th colspan="9">Time</th>
+        </tr>
+        <tr>
+            <th>I<br>08:50-09:40</th>
+            <th>II<br>09:40-10:30</th>
+            <th>III<br>10:40-11:30</th>
+            <th>IV<br>11:30-12:20</th>
+            <th>V<br>12:20-1:10</th>
+            <th>VI<br>01:10-2:00</th>
+            <th>VII<br>02:00-2:50</th>
+            <th>VIII<br>02:50-3:40</th>
+            <th>IX<br>03:40-04:30</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td>25AI101<br>(SHA)<br>RJ-206</td>
+            <td>25AS102<br>(VS)<br>RJ-206</td>
+            <td>25AS101<br>(VS)<br>RJ-206</td>
+            <td>25EL101<br>(PRM)<br>RJ-206</td>
+            <td rowspan="5">LUNCH</td>
+            <td>25CS151<br>(ALA)<br>RJ-303</td>
+            <td>25AS102<br>(RK)<br>RJ-303</td>
+            <td>25AS103<br>(DSH)<br>RJ-303</td>
+            <td>25AS103<br>(DSH)<br>RJ-303</td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td colspan="3">25AS151<br>(VS, YT)<br>KC Block III Floor (KC-310)</td>
+            <td>25AS102<br>(RK)<br>RJ-206</td>
+            <td>25EL101<br>(PRM)<br>RJ-206</td>
+            <td>25AS102<br>(VS)<br>RJ-206</td>
+            <td>25AI101<br>(SHA)<br>RJ-206</td>
+            <td>
+                <!-- Nested table example -->
+                <table class="nested-table">
+                    <tr><td>Mentor-Mentee</td></tr>
+                    <tr><td>(DSH, PRM)</td></tr>
+                    <tr><td>RJ-206</td></tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td>25AS102<br>(RK)<br>RJ-305</td>
+            <td>25VA151<br>(MN)<br>RJ-305</td>
+            <td colspan="2">25ME152<br>(DRK, WKS)<br>RJ Block I Floor (RJ-109)</td>
+            <td>25AI101<br>(SHA)<br>RJ-206</td>
+            <td>25AS101<br>(VS)<br>RJ-206</td>
+            <td>25EL101<br>(PRM)<br>RJ-206</td>
+            <td>25AS103<br>(DSH)<br>RJ-206</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td>25CS101<br>(ALA)<br>RJ-207</td>
+            <td>25CS101<br>(ALA)<br>RJ-207</td>
+            <td>25AS102<br>(RK)<br>RJ-207</td>
+            <td>25AS101<br>(VS)<br>RJ-207</td>
+            <td>25VA151<br>(MN)<br>KC Block V Floor (KC-509)</td>
+            <td>25AS102<br>(VS)<br>RJ-207</td>
+            <td>25AS101<br>(VS)<br>RJ-207</td>
+            <td>25CS101<br>(ALA)<br>RJ-207</td>
+           
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td>25EL151<br>(PRM, AB)<br>RJ-Basement</td>
+            <td>25EL101<br>(PRM)<br>RJ-204</td>
+            <td>25AS103<br>(DSH)<br>RJ-204</td>
+            <td>25AI151<br>(PRM)<br>RJ-204</td>
+            <td>25AS101<br>(VS)<br>RJ-207</td>
+            <td colspan="2">25EL101<br>(PRM)<br>RJ-305</td>
+            <td>25CS101<br>(ALA)<br>RJ-207</td>
+        </tr>
+    </table>
+</body>
+</html>
